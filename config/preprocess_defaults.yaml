@@ -1,0 +1,8 @@
+# Defaults (CLI flags override these at runtime)
+voxel_leaf: 0.3
+sor_mean_k: 20
+sor_stddev_mul: 1.0
+passthrough_enabled: false
+passthrough_field: z
+passthrough_min: -2.5
+passthrough_max: 2.5
