@@ -54,12 +54,7 @@ core
 core.*
 
 # --- IDE / editors ---
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/c_cpp_properties.json
+.vscode/
 .idea/
 *.swp
 *.swo
