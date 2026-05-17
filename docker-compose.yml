@@ -1,0 +1,15 @@
+services:
+  lidar_slam:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/workspace
+      - ./data:/workspace/data:ro
+    working_dir: /workspace
+    command: >
+      bash -c "cmake -S . -B build -DCMAKE_BUILD_TYPE=Release &&
+               cmake --build build -j$(nproc) &&
+               ./build/kitti_preprocess
+               --sequence data/data_odometry_velodyne/dataset/sequences/00
+               --start 0 --end 10"

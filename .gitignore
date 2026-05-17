@@ -103,3 +103,4 @@ datasets/
 *.temp
 .cache/
 /tmp/
+output/
