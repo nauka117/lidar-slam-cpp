@@ -13,7 +13,7 @@
 ## Сборка и запуск SLAM
 
 ```bash
-git clone <URL> lidar_slam && cd lidar_slam
+git clone https://github.com/nauka117/lidar-slam-cpp lidar_slam && cd lidar_slam
 docker compose build
 docker compose run --rm lidar_slam
 ```
