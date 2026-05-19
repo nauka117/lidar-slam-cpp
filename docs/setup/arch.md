@@ -3,7 +3,8 @@
 ## Пакеты
 
 ```bash
-sudo pacman -S --needed base-devel cmake ninja gdb pcl eigen3 boost openmpi
+sudo pacman -S --needed base-devel cmake ninja gdb eigen3 boost openmpi
+paru -S pcl
 ```
 
 PCL на Arch тянет VTK с MPI — в `CMakeLists.txt` включён язык C и `find_package(MPI)` до `find_package(PCL)`.
@@ -20,12 +21,6 @@ pkg-config --modversion pcl_common
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 cmake --build build -j$(nproc)
-```
-
-Для подсказок в Cursor/VS Code (опционально):
-
-```bash
-ln -sf build/compile_commands.json .
 ```
 
 ## Запуск препроцессинга
