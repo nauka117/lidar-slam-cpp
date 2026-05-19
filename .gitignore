@@ -1,5 +1,6 @@
 # --- Build (CMake / Make / Ninja) ---
 build/
+build-docker/
 out/
 cmake-build-*/
 CMakeCache.txt

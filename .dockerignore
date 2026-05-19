@@ -1,0 +1,8 @@
+build/
+build-docker/
+output/
+.git/
+data/
+demo_data/
+*.pcd
+*.bin
