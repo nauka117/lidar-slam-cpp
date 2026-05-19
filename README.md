@@ -14,7 +14,7 @@ LiDAR SLAM на **C++** и **PCL**: KITTI Velodyne, препроцессинг, 
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone <URL> lidar_slam
+git clone https://github.com/nauka117/lidar-slam-cpp lidar_slam
 cd lidar_slam
 ```
 
